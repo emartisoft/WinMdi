@@ -1,0 +1,80 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="pic\**" />
+    <EmbeddedResource Remove="pic\**" />
+    <None Remove="pic\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\nor_p.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\nor_h.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\nor.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\min_p.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\min_h.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\min.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\max_p.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\max_h.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\max.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\close_p.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\close_h.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="pic\close.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Properties\Resources.Designer.cs">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Properties\Resources.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
